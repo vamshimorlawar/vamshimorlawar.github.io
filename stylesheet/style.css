@@ -6,9 +6,6 @@ body {
 a {
     text-decoration: none;
 }
-section {
-    margin: 60px;
-}
 
 .header-section {
     display: flex;
@@ -20,7 +17,7 @@ section {
     margin-left: 47px;
 }
 .hero-fn {
-    font-size: 65px;
+    font-size: 54px;
     font-weight: 600;
 }
 .hero-ln {
@@ -65,7 +62,7 @@ section {
 
 .edu-section {
     margin-top: 100px;
-    max-width: 600px;
+    max-width: 540px;
 }
 
 .wexp-item, .edu-item {
@@ -96,11 +93,61 @@ section {
 
 .first-section {
     display: flex;
-    column-gap: 265px;
+    justify-content: space-between;
+    margin: 60px;
 }
 
-.fsecImg {
-    position: absolute;
-    right: 0;
-    z-index: -1;
+@media  (max-width: 1023px) {
+    .header-section{
+        flex-direction: column;
+        margin: 0;
+    }
+    .hero-fn, .hero-ln {
+        font-size: 45px;
+    }
+    .hero-content{
+        margin: 0 10px;
+    }
+    .hero-jp, .hero-desc {
+        padding: 0;
+    }
+    .hero-desc{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .first-section {
+        flex-direction: column;
+        margin: 0 0 60px 0;
+        gap: 100px;
+
+    }
+    .contact-section {
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .cs-item{
+        justify-content: center;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .fsecImg {
+        display: none;
+    }
+    .wexp-item, .edu-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wexp-item img, .edu-item img{
+        height: 120px;
+        width: 120px;
+    }
+    .exp-lin, .edu-lin {
+        text-align: center;
+        padding-top: 15px;
+        max-width: 320px;
+    }
 }
