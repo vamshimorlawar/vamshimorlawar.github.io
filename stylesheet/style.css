@@ -3,6 +3,12 @@ body {
     padding: 0;
     font-family: Montserrat, sans-serif;
 }
+a {
+    text-decoration: none;
+}
+section {
+    margin: 60px;
+}
 
 .header-section {
     display: flex;
@@ -32,4 +38,69 @@ body {
     line-height: 32px;
     margin-top: 25px;
     margin-bottom: 45px;
+}
+
+.contact-section {
+    width: max-content;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.cs-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cs-lin {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+.edu-section {
+    margin-top: 100px;
+    max-width: 600px;
+}
+
+.wexp-item, .edu-item {
+    display: flex;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.exp-lin, .edu-lin {
+    margin-left: 15px;  
+    color: black;
+}
+
+.exp-company, .edu-company {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.exp-role, .edu-role {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.exp-period, .edu-period {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.first-section {
+    display: flex;
+    column-gap: 265px;
+}
+
+.fsecImg {
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
