@@ -133,7 +133,7 @@ a {
         padding: 15px 30px;
     }
 }
-
+/* Progressbar CSS */
 .prbar {
     position: fixed;
     top: 0;
@@ -153,3 +153,36 @@ a {
     background: #00fda8;
     width: 0%;
   }
+
+  /* Hover Effects */
+  .hero-btn button:hover{
+      box-shadow: 3px 3px 10px 0 rgb(0, 253, 168, 0.6);
+  }
+
+  /* Text Animation */
+ .hero-fn::before {
+	top: 10;
+	left: 10;
+	width: 0;
+	height: 10%;
+	color: #00fda8;
+	overflow: hidden;
+	position: absolute;
+	content: attr(data-text);
+	border-right: 2px solid #00fda8;
+	-webkit-text-stroke: 0vw #f7f7fe;
+	animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+	0%,
+	10%,
+	100% {
+		width: 0;
+	}
+
+	70%,
+	90% {
+		width: 100%;
+	}
+}
