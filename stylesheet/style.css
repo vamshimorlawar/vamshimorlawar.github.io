@@ -10,29 +10,27 @@ a {
 .header-section {
     display: flex;
     align-items: flex-end;
-    margin: 0 60px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .hero-content {
-    margin-top: 188px;
-    margin-left: 47px;
+   padding-left: 47px;
 }
 .hero-fn {
-    font-size: 54px;
+    font-size: 40px;
     font-weight: 600;
 }
 .hero-ln {
     font-weight: 300;
 }
 .hero-jp {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
-    padding-left: 15px;
 }
 .hero-desc {
     font-size: 20px;
     font-weight: 300;
-    padding-left: 15px;
-    line-height: 32px;
+    line-height: 24px;
     margin-top: 25px;
     margin-bottom: 45px;
 }
@@ -42,7 +40,7 @@ a {
 }
 
 .section-title {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -60,9 +58,8 @@ a {
     color: black;
 }
 
-.edu-section {
-    margin-top: 100px;
-    max-width: 540px;
+.edu-section, .work-exp-section, .contact-section {
+    margin: 50px 0;
 }
 
 .wexp-item, .edu-item {
@@ -90,64 +87,35 @@ a {
     font-size: 16px;
     font-weight: 300;
 }
-
 .first-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-@media  (max-width: 1023px) {
-    .header-section{
+@media  (max-width: 767px) {
+    .header-section {
         flex-direction: column;
-        margin: 0;
     }
-    .hero-fn, .hero-ln {
-        font-size: 45px;
+    .hero-content {
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .hero-content{
-        margin: 0 10px;
+    .wexp-item img, .edu-item img {
+        width: 30px;
+        height: 30px;
     }
-    .hero-jp, .hero-desc {
-        padding: 0;
-    }
-    .hero-desc{
-        font-size: 18px;
-        line-height: 24px;
+    .section-content {
+        font-size: 16px;
     }
     .first-section {
-        flex-direction: column;
-        margin: 0 0 60px 0;
-        gap: 100px;
-
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .contact-section {
-        max-width: unset;
-        width: 100%;
-        text-align: center;
-        margin-top: 60px;
+    .exp-role, .hero-jp, .hero-desc, .edu-role, .exp-company, .edu-company {
+        font-size: 16px;
     }
-    .cs-item{
-        justify-content: center;
-    }
-    .section-title {
-        text-align: center;
-    }
-    .fsecImg {
-        display: none;
-    }
-    .wexp-item, .edu-item {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .wexp-item img, .edu-item img{
-        height: 120px;
-        width: 120px;
-    }
-    .exp-lin, .edu-lin {
-        text-align: center;
-        padding-top: 15px;
-        max-width: 320px;
+    .hero-fn, .hero-ln {
+        font-size: 24px;
+        margin-top: 20px;
     }
 }
