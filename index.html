@@ -12,6 +12,11 @@
     <title>Vamshikiran</title>
 </head>
 <body>
+    <div class="prbar">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+    </div>
     <header class="header-section">
         <div class="hero-img">
             <img src="./assets/hero.png">
@@ -24,6 +29,9 @@
                 Whether you are a small or mid-sized business, I am committed to creating solutions customised to 
                 help build the growth and success of your company. My goal as a UI/UX Designer and a Developer is
                 to help your business make a great first impression and stand out from your competition.
+            </div>
+            <div class="hero-btn">
+                <button>Download Resume</button>
             </div>
         </div>
     </header>
@@ -112,4 +120,15 @@
         Designed & Developed with ❤️️
     </footer>
 </body>
+<script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 </html>
