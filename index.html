@@ -17,6 +17,9 @@
           <div class="progress-bar" id="myBar"></div>
         </div>  
     </div>
+    <div class="coffeeImage" >
+        <img src="./assets/fsecImage.png" id="coffeeImage"/>
+    </div>
     <header class="header-section">
         <div class="hero-img">
             <img src="./assets/hero.png">
@@ -116,6 +119,7 @@
             </div>
         </section>
     </div>
+    
     <footer style="text-align: center; margin: 10px 0; font-weight: 300;">
         Designed & Developed with ❤️️
     </footer>
@@ -129,6 +133,8 @@
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
+      document.getElementById("coffeeImage").style.transform = 'rotate('+ scrolled + "deg)";
+      document.getElementById("coffeeImage").style.opacity = 1 - scrolled/100;
     }
 </script>
 </html>
