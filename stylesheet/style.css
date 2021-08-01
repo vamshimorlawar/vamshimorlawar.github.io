@@ -183,6 +183,20 @@ a {
 
 	70%,
 	90% {
-		width: 100%;
+		width: 570px;
 	}
+}
+@media (max-width: 767px){
+    @keyframes animate {
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+    
+        70%,
+        90% {
+            width: 350px;
+        }
+    }
 }
