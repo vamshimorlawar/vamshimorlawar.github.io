@@ -21,6 +21,21 @@ ul {
     border-radius: 10px;
 }
 
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social img {
+    height: 40px;
+}
+
+.social img:hover {
+    height: 60px;
+    transition: 1s;
+}
+
 @media screen and (max-width: 1600px) {
     .container {
         display: block;
